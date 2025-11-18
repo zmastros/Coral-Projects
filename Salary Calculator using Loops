@@ -6,7 +6,8 @@
 
 // Salary Calculator using Loops
 
-// This program tests the given salaries below.
+// Description: This program calculates annual salary, deductions, adjusted salary, tax rate, and tax to pay based on user input. 
+// It uses loops to handle multiple deductions and allows for clean exit.
 
 // Enter exactly into the input:
 // 40000  
