@@ -1,0 +1,77 @@
+// Written by zmastros / GitHub
+// Coded in Coral
+
+// Program can be run in the Coral Simulator at:
+// https://corallanguage.org/simulator/
+
+// WeightArrayPrinter
+
+// Description: This program prompts for five weights, calculates total,
+// average, and maximum weights, and outputs the results.
+
+// Enter exactly into the input:
+// 236.0 89.5 142.0 166.3 93.0
+
+float array(5) weights
+float totalWeight
+float meanWeight
+float highestWeight
+
+weights[0] = Get next input
+weights[1] = Get next input
+weights[2] = Get next input
+weights[3] = Get next input
+weights[4] = Get next input
+
+Put "Enter weight 1: " to output
+Put weights[0] to output
+Put " \n" to output
+Put "Enter weight 2: " to output
+Put weights[1] to output
+Put " \n" to output
+Put "Enter weight 3: " to output
+Put weights[2] to output
+Put " \n" to output
+Put "Enter weight 4: " to output
+Put weights[3] to output
+Put " \n" to output
+Put "Enter weight 5: " to output
+Put weights[4] to output
+Put " \n" to output
+
+Put "You entered: " to output
+Put weights[0] to output
+Put " " to output
+Put weights[1] to output
+Put " " to output
+Put weights[2] to output
+Put " " to output
+Put weights[3] to output
+Put " " to output
+Put weights[4] to output
+Put " \n" to output
+
+totalWeight = weights[0] + weights[1] + weights[2] + weights[3] + weights[4]
+Put "Total weight: " to output
+Put totalWeight to output with 2 decimal places
+Put "\n" to output
+
+meanWeight = totalWeight / weights.size
+Put "Average weight: " to output
+Put meanWeight to output with 2 decimal places
+Put "\n" to output
+
+highestWeight = 0
+if weights[0] > highestWeight
+   highestWeight = weights[0]
+if weights[1] > highestWeight
+   highestWeight = weights[1]
+if weights[2] > highestWeight
+   highestWeight = weights[2]
+if weights[3] > highestWeight
+   highestWeight = weights[3]
+if weights[4] > highestWeight
+   highestWeight = weights[4]
+Put "Max weight: " to output
+Put highestWeight to output
+Put "\n" to output
