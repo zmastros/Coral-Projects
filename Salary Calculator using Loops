@@ -1,0 +1,75 @@
+// Written by zmastros / GitHub
+// Coded in Coral
+
+// Program can be run in the Coral Simulator at:
+// https://corallanguage.org/simulator/
+
+// Salary Calculator using Loops
+
+// This program tests the given salaries below.
+
+// Enter exactly into the input:
+// 40000  
+// 7000  
+// 9000  
+// 11000  
+// 0  
+// 55000  
+// 0  
+// 90000  
+// 0  
+// 0
+
+// An extra 0 is at the end of the input to allow for a clean exit and to avoid sudden termination in Coral.
+
+integer annualSalary
+integer oneDeduction
+integer totalDeductions
+integer adjustedSalary
+integer TaxToPay
+float taxRate
+
+Put "\nEnter Annual Salary (0 to exit): " to output
+annualSalary = Get next input
+
+while annualSalary > 0
+   totalDeductions = 0
+   
+   Put "\nEnter a Deduction amount (0 to end Deductions):" to output
+   oneDeduction = Get next input
+
+   while oneDeduction > 0
+      totalDeductions = totalDeductions + oneDeduction
+      Put "\nEnter a Deduction amount (0 to end Deductions):" to output
+      oneDeduction = Get next input
+
+   adjustedSalary = annualSalary - totalDeductions
+   if adjustedSalary <= 0
+      adjustedSalary = 0
+      taxRate = 0.0
+   elseif adjustedSalary <= 20000
+      taxRate = 0.10
+   elseif adjustedSalary >= 100000
+      taxRate = 0.30
+   else
+      taxRate = 0.40
+
+   TaxToPay = adjustedSalary * taxRate
+
+   Put "\nAnnual Salary: " to output
+   Put annualSalary to output
+
+   Put "\nDeductions: " to output
+   Put totalDeductions to output
+
+   Put "\nAdjusted Salary after deductions: " to output
+   Put adjustedSalary to output
+
+   Put "\nTax rate: " to output
+   Put taxRate to output
+
+   Put "\nTax to Pay: " to output
+   Put TaxToPay to output
+
+   Put "\nEnter Annual Salary (0 to exit): " to output
+   annualSalary = Get next input
