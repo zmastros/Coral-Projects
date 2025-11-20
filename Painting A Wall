@@ -1,0 +1,54 @@
+// Written by zmastros / GitHub
+// Coded in Coral
+
+// Program can be run in the Coral Simulator at:
+// https://corallanguage.org/simulator/
+
+// Painting A Wall
+
+// Description: Calculates a wall’s area and determines how many gallons and full paint cans are needed to paint it.
+
+// Enter exactly into the input:
+// 12 15
+
+float doubleWallHeight
+float doubleWallWidth
+float doubleWallArea
+float doubleGallonsPaintNeeded
+float doubleGallonsPerCan
+float cansNeededDoubleVariable
+
+integer cansNeeded
+integer doubleSquareFeetPerGallons
+
+doubleWallHeight = 0.0
+doubleWallWidth = 0.0
+doubleWallArea = 0.0
+doubleGallonsPaintNeeded = 0.0
+cansNeeded = 0
+doubleSquareFeetPerGallons = 350
+doubleGallonsPerCan = 1.0
+
+doubleWallHeight = Get next input
+doubleWallWidth = Get next input
+
+doubleWallArea = doubleWallHeight * doubleWallWidth
+
+doubleGallonsPaintNeeded = doubleWallArea / doubleSquareFeetPerGallons
+
+cansNeededDoubleVariable = doubleGallonsPaintNeeded / doubleGallonsPerCan
+
+cansNeeded = cansNeededDoubleVariable
+
+if (cansNeeded * doubleGallonsPerCan) < doubleGallonsPaintNeeded
+   cansNeeded = cansNeeded + 1
+
+Put "Wall area: " to output
+Put doubleWallArea to output
+Put " sqaure feet\n" to output
+Put "Paint needed: " to output
+Put doubleGallonsPaintNeeded to output with 2 decimal places
+Put " gallons\n" to output
+Put "Cans needed: " to output
+Put cansNeeded to output
+Put " can(s)\n" to output
