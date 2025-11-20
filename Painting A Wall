@@ -43,8 +43,14 @@ cansNeeded = cansNeededDoubleVariable
 if (cansNeeded * doubleGallonsPerCan) < doubleGallonsPaintNeeded
    cansNeeded = cansNeeded + 1
 
+Put "Enter wall height (feet): " to output
+Put doubleWallHeight to output
+Put "\n" to output
+Put "Enter wall width (feet): " to output
+Put doubleWallWidth to output
+Put "\n" to output
 Put "Wall area: " to output
-Put doubleWallArea to output
+Put doubleWallArea to output with 2 decimal places
 Put " sqaure feet\n" to output
 Put "Paint needed: " to output
 Put doubleGallonsPaintNeeded to output with 2 decimal places
