@@ -1,0 +1,36 @@
+// Written by zmastros / GitHub
+// Coded in Coral
+
+// Program can be run in the Coral Simulator at:
+// https://corallanguage.org/simulator/
+
+// Loan Payoff Calculator
+
+// Description: This program determines how many monthly payments is required to fully pay off a given loan.
+
+// Enter exactly into the input:
+// Initial Balance / Payment Amount / Interest Rate (Decimal)
+// 100 20 0.02
+
+float doubleBalance
+float doublePayment
+float rate
+integer numPayments
+
+numPayments = 0
+
+doubleBalance = Get next input
+doublePayment = Get next input
+rate = Get next input
+
+while doubleBalance > 0
+   doubleBalance = (doubleBalance * (rate + 1.0))
+   doubleBalance = doubleBalance - doublePayment
+   numPayments = numPayments + 1
+
+if numPayments == 1
+   Put numPayments to output
+   Put " payment" to output
+else
+   Put numPayments to output
+   Put " payments" to output
